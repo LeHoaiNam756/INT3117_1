@@ -15,12 +15,17 @@ public class Solution {
         double d1 = x1 - v1 * t_trigger;
         double d2 = x2 - v2 * t_trigger;
 
-        double t_tom = d1 / (2 * v1 - v3);
+        double t_tom = Double.POSITIVE_INFINITY;
+        if (2 * v1 > v3) {
+            t_tom = d1 / (2 * v1 - v3);
+        }
 
-        double t_butch = d2 / (2 * v2 - v3);
+        double t_butch = Double.POSITIVE_INFINITY;
+        if (2 * v2 > v3) {
+            t_butch = d2 / (2 * v2 - v3);
+        }
 
         double t_hole = x3 / v3;
-
 
         boolean tomCanCatch = t_tom < t_hole;
         boolean butchCanCatch = t_butch < t_hole;
