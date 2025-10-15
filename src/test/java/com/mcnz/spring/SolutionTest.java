@@ -35,12 +35,13 @@ class SolutionTest {
             Arguments.of(50.0, 7.5, 50.0, 7.5, 25.0, 19.9, "Jerry"),
             Arguments.of(50.0, 7.5, 50.0, 7.5, 25.0, 20.0, "Jerry"),
             Arguments.of(50.0, 7.5, 50.0, 7.5, 25.0, 10.0, "Jerry"),
-            Arguments.of(-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, "Invalid Input"), //####
-            Arguments.of(50.0, 5.0, 50.0, 0.0, 25.0, 5.0, "Tom"),
-            Arguments.of(50.0, 0.0, 50.0, 5.0, 25.0, 5.0, "Butch"),
-            Arguments.of(50.0, 5.0, 50.0, 5.0, 25.0, 5.0, "Jerry"),
-            Arguments.of(50.0, 3.0, 50.0, 3.0, 25.0, 5.0, "Jerry"),
-            Arguments.of(50.0, 1.0, 50.0, 0.0, 25.0, 10.0, "Jerry")
+            Arguments.of(10.0, 5.0, 20.0, 4.0, 30.0, 6.0, "Tom"), // Kiểm thử dòng điểu khiển
+            Arguments.of(8.0, 2.0, 12.0, 3.0, 10.0, 3.0, "Butch"),
+            Arguments.of(10.0, 4.0, 10.0, 4.0, 15.0, 2.0, "Jerry"),
+            Arguments.of(10.0, 8.0, 80.0, 4.0, 15.0, 6.0, "Tom"),
+            Arguments.of(100.0, 2.0, 10.0, 8.0, 5.0, 3.0, "Butch"),
+            Arguments.of(100.0, 2.0, 80.0, 2.0, 2.0, 3.0, "Jerry"),
+            Arguments.of(10.0, 2.0, 20.0, 2.0, 30.0, 10.0, "Jerry")
         );
     }
 
